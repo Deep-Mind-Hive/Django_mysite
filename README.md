@@ -53,13 +53,13 @@ To register/install an app you have to go to the directory as follows:
 
 in that file you will see a section called <strong>installed_apps</strong> :
 
-<code>
+
   
   
-#Application definition
+    Application definition
 
 
-INSTALLED_APPS = [
+    INSTALLED_APPS = [
     'blog',
     'personal',
     'django.contrib.admin',
@@ -68,9 +68,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-]
+      ]
 
-</code>
+
 
 
 
@@ -87,8 +87,12 @@ urls.py would be like [this](https://github.com/Deep-Mind-Hive/Django_mysite/blo
 ### 4. Where to keep HTML, CSS and .js file
 
 To store all the HTML, CSS, JavaScript and Images file have to be stored in two containers(folder):
+  
   1. Template
   2. static
+
+
+
 For HTML we use template and for Cascade Styling Sheet, JavaScript and Image we use statics container.
 
 Note: Never use same name for any of the html,css or js file even if you have created different folders/containers for each app django stack them up and treat them as one container.
@@ -98,10 +102,16 @@ Solution:
   
 like:
 
-<code>mysite/mysite/blog/template/blog/home.html</code>
-<code>mysite/mysite/static/blog/css/home.css</code>
-<code>mysite/mysite/static/blog/js/home.js</code>
-<code>.cssmysite/mysite/static/blog/img/logo.jpg</code>
+  <code>mysite/mysite/blog/template/blog/home.html</code>
+
+
+  <code>mysite/mysite/static/blog/css/home.css</code>
+
+
+  <code>mysite/mysite/static/blog/js/home.js</code>
+
+
+  <code>.cssmysite/mysite/static/blog/img/logo.jpg</code>
  
 
 
