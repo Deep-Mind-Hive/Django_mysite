@@ -96,7 +96,12 @@ Solution:
   1. Never use same name
   2. use different folder for each app
   
-like
+like:
+
+<code>mysite/mysite/blog/template/blog/home.html</code>
+<code>mysite/mysite/static/blog/css/home.css</code>
+<code>mysite/mysite/static/blog/js/home.js</code>
+<code>.cssmysite/mysite/static/blog/img/logo.jpg</code>
  
 
 
