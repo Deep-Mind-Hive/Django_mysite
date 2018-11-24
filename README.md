@@ -111,7 +111,7 @@ like:
   <code>mysite/mysite/static/blog/js/home.js</code>
 
 
-  <code>.cssmysite/mysite/static/blog/img/logo.jpg</code>
+  <code>mysite/mysite/static/blog/img/logo.jpg</code>
  
 
 
