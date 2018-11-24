@@ -42,6 +42,18 @@ inside the root directory (the container you have created after you start the pr
 similarly fill in the blank with the app name in my case its <strong>Blog and Personal</strong>. 
 
 
+After creating a project just run the server for ensuring the installation :
+
+    python manage.py runserver
+
+and the output will be like this: 
+
+<img alt="" src="https://tutorial.djangogirls.org/en/django_start_project/images/install_worked.png">
+
+<img alt="" src="https://1.bp.blogspot.com/-U0i4-G4-Ev8/WWeaGxBgvfI/AAAAAAAAFkE/892zkk2-8KM2hpcR2F3EkHPBiNngkPpQwCLcBGAs/s1600/Run-Django-server-for-permanent-on-Centos-and-Ubuntu.png">
+
+
+
 ### 2. Register your freshly created app 
 
 
