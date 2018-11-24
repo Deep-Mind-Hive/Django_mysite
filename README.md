@@ -93,6 +93,37 @@ As default if you start your server locally the site will be available on <stron
 So when the user enters 127.0.0.1:8000/blog we have to route the user to the app.
 To do that we have to edit the urls.py file in the same directory where we edited settings.py .
 urls.py would be like [this](https://github.com/Deep-Mind-Hive/Django_mysite/blob/master/mysite/urls.py)
+To reroute the user we have two ways:
+  1. by using url module with include function or
+  2. by using path module.
+  
+I have used both of the method for your understanding.
+After you user to the app's urls.py you have to reroute user to the appropriate html file.
+
+Main urls.py file:
+
+    from django.contrib import admin
+    from django.urls import path
+    from django.conf.urls import include, url
+
+    urlpatterns = [
+        path('admin/', admin.site.urls),
+        url(r'^', include('personal.urls')),
+        url(r'^blog/', include('blog.urls')),   
+    ]
+
+
+App's urls.py (Personal App's urls.py)
+
+    from django.conf.urls import url, include
+    from . import views
+
+
+    urlpatterns = [url(r'^$', views.index, name='index'),url(r'^contact/$', views.contact, name='contact')] 
+
+
+    
+
 
 
 
