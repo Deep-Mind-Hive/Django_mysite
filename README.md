@@ -1,4 +1,6 @@
-# Django_mysite
+# Django Tutorial
+
+
 A simple blogging website developed by using Django framework
 
 In this project I will tell you how to get started with django from strach.
