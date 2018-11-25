@@ -117,8 +117,6 @@ App's urls.py (Personal App's urls.py)
 
     from django.conf.urls import url, include
     from . import views
-
-
     urlpatterns = [url(r'^$', views.index, name='index'),url(r'^contact/$', views.contact, name='contact')] 
 
 
@@ -145,17 +143,45 @@ Solution:
   
 like:
 
-  <code>mysite/mysite/blog/template/blog/home.html</code>
-
-
-  <code>mysite/mysite/static/blog/css/home.css</code>
-
-
-  <code>mysite/mysite/static/blog/js/home.js</code>
-
-
-  <code>mysite/mysite/static/blog/img/logo.jpg</code>
+    mysite/mysite/blog/template/blog/home.html
+    mysite/mysite/static/blog/css/home.css
+    mysite/mysite/static/blog/js/home.js
+    mysite/mysite/static/blog/img/logo.jpg
  
 
 
+### 5. Models.py
 
+Models are use for creating tables like we create in sql or any other database language.
+For each app which requires a database usage we have to create a Class in models.py . For Example
+
+    from django.db import models
+    class Post(models.Model):
+	      title = models.CharField(max_length=140)
+	      body = models.TextField()
+	      date = models.DateTimeField()
+        
+	      def __str__(self):
+		        return self.title
+
+In blogging app we have only three fields :
+  1. Title of the blog
+  2. Body of the blog and
+  3. Date on which the blog has been posted
+  
+As per the above code tile is allowed only to take characters with maximum length of 140 characters, Body is allowed to take only text which has more words to take in and date as per the name only allowed to take date as an input.
+After creating the any model first we have to register the model so that in will be displayed in the admin section and then we have to migrate the project.
+
+  1. Registring the model:
+          
+          mysite/mysite/blog/admin.py  
+          from django.contrib import admin
+          # Register your models here.
+          from blog.models import Post
+          admin.site.register(Post)
+  2. migration of the changes:
+                
+          python manage.py makemigrate.
+          
+          python manage.p migrate.
+          
