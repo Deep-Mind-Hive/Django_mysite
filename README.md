@@ -151,7 +151,7 @@ like:
  
 
 
-### 5. Models.py
+### 5. [Models.py](https://docs.djangoproject.com/en/2.1/#the-model-layer)
 
 Models are use for creating tables like we create in sql or any other database language.
 For each app which requires a database usage we have to create a Class in models.py . For Example
