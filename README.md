@@ -176,6 +176,7 @@ After creating the any model first we have to register the model so that in will
   1. Registring the model:
           
           mysite/mysite/blog/admin.py  
+	  
           from django.contrib import admin
           # Register your models here.
           from blog.models import Post
