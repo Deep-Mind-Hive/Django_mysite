@@ -184,6 +184,6 @@ After creating the any model first we have to register the model so that in will
   
   2. migration of the changes:
                 
-          python manage.py makemigrate.          
+          python manage.py makemigrations.          
           python manage.py migrate.
           
