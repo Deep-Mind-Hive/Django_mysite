@@ -126,7 +126,7 @@ App's urls.py (Personal App's urls.py)
 
 
 
-### 4. Where to keep HTML, CSS and .js file
+### 4. Where to keep HTML, CSS, JavaScript and Image files
 
 To store all the HTML, CSS, JavaScript and Images file have to be stored in two containers(folder):
   
