@@ -9,7 +9,7 @@ In this project I will tell you how to get started with django from strach.
 
 For this tutorial I will be using python 3, so if you are on python 2 will suggest you to first upgrade to python 3 form [here](https://www.python.org).
 
-In order to get django in your machine no matter weather you are using windows, Mac OS or any LINUX distrubutions you just have to run only one coomand from your terminal/command prompt which is:
+In order to get django in your machine no matter weather you are using windows, Mac OS or any LINUX distrubutions you just have to run only one command from your terminal/command prompt which is:
 
 	pip install django
 
