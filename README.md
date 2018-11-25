@@ -28,7 +28,7 @@ fill in the blanks with the name of your project, in my case its <strong>mysite<
 
 
 It will create a container with the name of your project. Inside that there will be a bunch of files and a folder with the same name. The second folder with the same name contains follwing files:
-  1. __init__.py (it will tell python to treat it as a pakage.)_mysite
+  1. __init__.py (it will tell python to treat it as a pakage.)
   2. settings.py (it is central setting hub for website in which you install all your apps)
   3. urls.py (it is file which reroutes to your apps and htmls)
   4. wsgi.py (don't play with it)
