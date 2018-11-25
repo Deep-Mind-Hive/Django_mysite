@@ -11,17 +11,18 @@ For this tutorial I will be using python 3, so if you are on python 2 will sugge
 
 In order to get django in your machine no matter weather you are using windows, Mac OS or any LINUX distrubutions you just have to run only one coomand from your terminal/command prompt which is:
 
-<code>pip install django</code>
+	pip install django
 
 and if you already have django installed then upgrade it to latest version:
-<code>pip install --upgrade django</code>
+	
+	pip install --upgrade django
 
 
 ## Let's get started with django
 
 ### 1. First we have to start a project
 
-<code>django-admin startproject _______</code>
+	django-admin startproject _______
 
 fill in the blanks with the name of your project, in my case its <strong>mysite</strong>.
 
@@ -37,7 +38,7 @@ For starting a brand new app :
 
 inside the root directory (the container you have created after you start the project) open terminal/command prompt and then run it
 
-<code>python manage.py startapp ______</code>
+	python manage.py startapp ______
 
 similarly fill in the blank with the app name in my case its <strong>Blog and Personal</strong>. 
 
@@ -61,7 +62,7 @@ After the creation your first app you have to register/installed it in the proje
 To register/install an app you have to go to the directory as follows:
 
 
-<code>Project_name/Project_name/settings.py</code>
+	Project_name/Project_name/settings.py
 
 in that file you will see a section called <strong>installed_apps</strong> :
 
@@ -179,9 +180,9 @@ After creating the any model first we have to register the model so that in will
           # Register your models here.
           from blog.models import Post
           admin.site.register(Post)
+  
   2. migration of the changes:
                 
-          python manage.py makemigrate.
-          
-          python manage.p migrate.
+          python manage.py makemigrate.          
+          python manage.py migrate.
           
