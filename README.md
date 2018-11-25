@@ -187,3 +187,7 @@ After creating the any model first we have to register the model so that in will
           python manage.py makemigrations.          
           python manage.py migrate.
           
+### 6. [DataBase](https://docs.djangoproject.com/en/2.1/ref/databases/)
+
+Django supports many database like sqlite, PostgreSQL, MySQL, Oracle, SAP SQL, IBM DB2, Microsoft SQL Server, Firebird, ODBC
+
