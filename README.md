@@ -91,7 +91,7 @@ in that file you will see a section called <strong>installed_apps</strong> :
 
 After defining/installation/registering the app we have to reroute the to the app.
 As default if you start your server locally the site will be available on <strong>127.0.0.1:8000</strong>.
-So when the user enters 127.0.0.1:8000/blog we have to route the user to the app.
+So when the user enters <strong>127.0.0.1:8000/blog</strong> we have to route the user to the app.
 To do that we have to edit the urls.py file in the same directory where we edited settings.py .
 urls.py would be like [this](https://github.com/Deep-Mind-Hive/Django_mysite/blob/master/mysite/urls.py)
 To reroute the user we have two ways:
