@@ -178,7 +178,7 @@ In blogging app we have only three fields :
   2. Body of the blog and
   3. Date on which the blog has been posted
   
-As per the above code tile is allowed only to take characters with maximum length of 140 characters, Body is allowed to take only text which has more words to take in and date as per the name only allowed to take date as an input.
+As per the above code title is allowed only to take strings with maximum length of 140 characters, Body is allowed to take only text which has more words to take in and date as per the name only allowed to take date as an input.
 After creating the any model first we have to register the model so that in will be displayed in the admin section and then we have to migrate the project.
 
   1. Registring the model:
