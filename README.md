@@ -26,6 +26,14 @@ and if you already have django installed then upgrade it to latest version:
 
 fill in the blanks with the name of your project, in my case its <strong>mysite</strong>.
 
+	mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+
 
 It will create a container with the name of your project. Inside that there will be a bunch of files and a folder with the same name. The second folder with the same name contains follwing files:
   1. _init_.py (it will tell python to treat it as a pakage.)
@@ -55,7 +63,7 @@ and the output will be like this:
 
 
 
-### 2. Register your freshly created app 
+### 2. [Register your freshly created app](https://docs.djangoproject.com/en/2.1/intro/tutorial01/)
 
 
 After the creation your first app you have to register/installed it in the project so that django can recognise it and redirect the user to that app. in other words we have to define our apps.
@@ -87,7 +95,7 @@ in that file you will see a section called <strong>installed_apps</strong> :
 
 
 
-### 3. Rerouting 
+### 3. [Rerouting](https://docs.djangoproject.com/en/2.1/ref/urls/)
 
 After defining/installation/registering the app we have to reroute the to the app.
 As default if you start your server locally the site will be available on <strong>127.0.0.1:8000</strong>.
@@ -126,7 +134,7 @@ App's urls.py (Personal App's urls.py)
 
 
 
-### 4. Where to keep HTML, CSS, JavaScript and Image files
+### 4. [Where to keep HTML, CSS, JavaScript and Image files](https://docs.djangoproject.com/en/2.1/howto/static-files/)
 
 To store all the HTML, CSS, JavaScript and Images file have to be stored in two containers(folder):
   
@@ -190,4 +198,13 @@ After creating the any model first we have to register the model so that in will
 ### 6. [DataBase](https://docs.djangoproject.com/en/2.1/ref/databases/)
 
 Django supports many database like sqlite, PostgreSQL, MySQL, Oracle, SAP SQL, IBM DB2, Microsoft SQL Server, Firebird, ODBC
-
+In main settings.py we have to define that which database we are going to use for example:
+	
+	mysite/mysite/setings.py
+	
+	DATABASES = {
+    		'default': {
+        		'ENGINE': 'django.db.backends.sqlite3',
+        		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+   		      }
+		}
